@@ -1,0 +1,3 @@
+export GNU_GCC_ARM=/home/aalors/Documents/Nordic/gcc-arm-none-eabi-9-2020-q2-update
+export GNU_GCC_ARM_LIBS=/home/aalors/Documents/Nordic/gcc-arm-none-eabi-9-2020-q2-update/lib/gcc/arm-none-eabi/9.3.1
+export nRF_SDK=/home/aalors/Documents/Nordic/nRF5_SDK_17.0.0_9d13099

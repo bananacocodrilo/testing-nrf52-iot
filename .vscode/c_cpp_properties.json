@@ -1,0 +1,75 @@
+{
+  "configurations": [
+    {
+      "name": "Linux",
+      "includePath": [
+        "${env:GNU_GCC_ARM}/arm-none-eabi/include/**",
+        "${env:GNU_GCC_ARM_LIBS}/include/**",
+        "${env:nRF_SDK}/components/**",
+        "${env:nRF_SDK}/modules/**",
+        "${workspaceFolder}/project/**",
+        "${workspaceFolder}/boards/**",
+        "${workspaceFolder}/**"
+      ],
+      "defines": [
+        "BOARD_PCA10056",
+        "CONFIG_GPIO_AS_PINRESET",
+        "INITIALIZE_USER_SECTIONS",
+        "FLOAT_ABI_HARD",
+        "NRF52",
+        "NRF52840_XXAA",
+        "NRF_SD_BLE_API_VERSION=6",
+        "S140",
+        "SOFTDEVICE_PRESENT",
+        "SWI_DISABLE0"
+      ],
+      "intelliSenseMode": "clang-x64",
+      "browse": {
+        "path": [
+          "${env:GNU_GCC_ARM}/arm-none-eabi/include",
+          "${env:GNU_GCC_ARM_LIBS}/include",
+          "${env:nRF_SDK}/components/",
+          "${env:nRF_SDK}/components/libraries/util",
+          "${env:nRF_SDK}/components/libraries/",
+          "${workspaceFolder}/project/",
+          "${workspaceFolder}/boards/",
+          "${workspaceFolder}/"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "compilerPath": "${env:GNU_GCC_ARM}/bin/arm-none-eabi-gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+    {
+      "name": "Mac",
+      "includePath": ["/usr/include", "/usr/local/include", "${workspaceFolder}"],
+      "defines": [],
+      "intelliSenseMode": "clang-x64",
+      "browse": {
+        "path": ["/usr/include", "/usr/local/include", "${workspaceFolder}"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "macFrameworkPath": ["/System/Library/Frameworks", "/Library/Frameworks"],
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    },
+
+    {
+      "name": "Win32",
+      "includePath": ["${workspaceFolder}", "your/path/nRF5_SDK_14.2.0_17b948a"],
+      "defines": ["_DEBUG", "UNICODE", "_UNICODE"],
+      "intelliSenseMode": "msvc-x64",
+      "browse": {
+        "path": ["${workspaceFolder}", "your/path/nRF5_SDK_14.2.0_17b948a"],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      },
+      "cStandard": "c11",
+      "cppStandard": "c++17"
+    }
+  ],
+  "version": 4
+}
